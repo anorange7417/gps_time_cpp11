@@ -5,7 +5,7 @@
 int main() {
     int leapseconds = 18;
     // In order to calculate day number & time of week, use std::gmtime() using UTC clock (origin is 1960-01-01)
-    auto now = std::chrono::system_clock::now() + std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::seconds(leapseconds)); // because of leap seconds
+    auto now = std::chrono::system_clock::now() + std::chrono::seconds(leapseconds); // because of leap seconds
     auto now_c = std::chrono::system_clock::to_time_t(now); 
     std::tm* utc_tm = std::gmtime(&now_c);    
     int day_number = utc_tm->tm_wday;
