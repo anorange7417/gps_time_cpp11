@@ -7,8 +7,9 @@ Leap seconds is hard coded. (18s)
 
 
 # Output
-The output contains:
-TOW[s] : Time of weekends
-Day : Day number (0: Sunday)
-WN : Week Number 
-RO : Roll Over (1 Roll Over = 1024 weeks)
+
+```
+TOW[s]: 285261.018607
+DAY: 3
+WeekNum: 274
+RollOver: 2
